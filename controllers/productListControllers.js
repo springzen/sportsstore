@@ -47,7 +47,7 @@ angular.module("sportsStore")
         }
 
         /**
-         * designed for use with tne ng-class directive to highlight the selected page
+         * designed for use with the ng-class directive to highlight the selected page
          * @param page
          * @returns {*}
          */

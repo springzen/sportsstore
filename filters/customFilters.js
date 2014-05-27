@@ -36,7 +36,7 @@ angular.module("customFilters", []).filter("unique", function () {
             if (data.length < start_index) {
                 return [];
             } else {
-                return $filter("limitTo")(data.splice(start_index, size));
+                return $filter("limitTo")(data.splice(start_index), size);
             }
         } else {
             return data;
