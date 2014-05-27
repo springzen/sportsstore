@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="angular.js"></script>
+</head>
+<body ng-app="helloApp" ng-controller="HelloCtrl">
+<div>
+    <p>{{person.greeting}} {{person.message}}</p>
+    <input autofocus ng-model="person.message">
+
+</div>
+<div>
+    <input autofocus ng-model="person.message">
+    {{person.message}}
+</div>
+<script>
+    angular.module('helloApp', [])
+            .controller('HelloCtrl', function ($scope) {
+                $scope.person = {
+                    greeting:"hello",
+                    message:"world"
+                }
+                $scope.person.greeting = 'Hello';
+                $scope.person.message = 'World';
+            });
+
+
+    //    var app = angular.module("app", ["ngRoute"]);
+    //
+    //    app.config(function($routeProvider) {
+    //        $routeProvider
+    //                .when('/',
+    //                {
+    //                    templateUrl: "app.html",
+    //                    controller: "AppCtrl"
+    //                })
+    //                .when('/pizza', {
+    //                    templateUrl: "pizza.html"
+    //                }).otherwise({
+    //                    template: "This doesn't exist!"
+    //                })
+    //    });
+    //
+    //    app.controller("AppCtrl", function($scope) {
+    //
+    //        $scope.model = {
+    //            message: "This is my app!!!"
+    //        }
+    //    });
+</script>
+</body>
+</html>
