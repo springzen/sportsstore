@@ -1,7 +1,7 @@
 SportStore
 ===========
 
-## 2014.05.27
+#### 2014.05.27
 Book project from the book by Adam Freeman - the book link at Amazon: [http://amzn.com/B00HX4PJ9I]
 Essentially, this project starts at Chapter 6 where the 'real' book project starts.
 Each chapter is branched so if you mess up, you can always get back to the initial state.
@@ -10,6 +10,6 @@ I have also added the file to start the project in "server" mode using node. If 
 
 I have created the project using WebStorm; and so I added the project files as well.
 
-## 2014.05.28
+#### 2014.05.28
 - added $http supporting sportsStore.js - [https://docs.angularjs.org/api/ng/service/$http]
 - added show and hide errors using ng-hide and ng-show
