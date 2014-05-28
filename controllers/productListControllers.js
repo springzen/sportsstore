@@ -24,7 +24,7 @@ angular.module("sportsStore")
              * @type {number}
              */
             $scope.selectedPage = 1;
-        }
+        };
 
         /**
          * behavior - allows the selected page to be changed
@@ -33,18 +33,18 @@ angular.module("sportsStore")
          */
         $scope.selectPage = function (newPage) {
             $scope.selectedPage = newPage;
-        }
+        };
 
         $scope.categoryFilterFn = function (product) {
             return selectedCategory == null ||
                 product.category == selectedCategory;
-        }
+        };
 
         $scope.getCategoryClass = function (category) {
             console.log("category :: " + category);
             console.log("selected category :: " + selectedCategory);
             return selectedCategory == category ? productListActiveClass : "";
-        }
+        };
 
         /**
          * designed for use with the ng-class directive to highlight the selected page
@@ -53,6 +53,6 @@ angular.module("sportsStore")
          */
         $scope.getPageClass = function (page) {
             return $scope.selectedPage == page ? productListActiveClass : "";
-        }
+        };
     });
 
